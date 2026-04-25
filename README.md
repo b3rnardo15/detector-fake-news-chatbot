@@ -1,37 +1,36 @@
-# Detector de Fake News - Chatbot de Saúde
+# Detector de Fake News com Inteligência Artificial
 
-Este projeto consiste em um chatbot inteligente desenvolvido para verificar a veracidade de notícias relacionadas à área da saúde. Utilizando técnicas avançadas de Processamento de Linguagem Natural (PLN) e Inteligência Artificial, o sistema auxilia usuários na identificação de desinformação e conteúdos potencialmente enganosos.
+Este projeto é um chatbot inteligente desenvolvido para a disciplina de **Inteligência Artificial**, focado na verificação de veracidade de notícias sobre saúde e bem-estar no contexto brasileiro.
 
-## Objetivo
+##  Visão Geral
 
-O principal objetivo deste projeto é combater a disseminação de notícias falsas sobre saúde, fornecendo uma ferramenta acessível e confiável para validação de informações em tempo real.
+A disseminação em massa de notícias falsas (*fake news*) relacionadas à saúde distorce a percepção pública e compromete a saúde coletiva. Este projeto utiliza modelos de Processamento de Linguagem Natural (NLP) de última geração para identificar padrões linguísticos típicos de desinformação, como curas milagrosas e teorias da conspiração.
 
-## Estrutura do Projeto
+### Diferencial da Proposta
+- **Foco em Português Brasileiro:** Utilização do modelo **BERTimbau (Large)**.
+- **Domínio Específico:** Especializado em conteúdos de saúde e bem-estar.
+- **Acessibilidade:** Interface via Chatbot (Telegram/WhatsApp) para facilitar o combate à desinformação em tempo real.
 
-O repositório está organizado da seguinte forma:
+##  Componentes Técnicos
 
-- `src/`: Código-fonte do projeto.
-  - `api/`: Implementação da interface de comunicação.
-  - `chatbot/`: Lógica principal de interação e processamento.
-  - `models/`: Modelos de IA e algoritmos de detecção.
-  - `utils/`: Funções auxiliares e utilitários.
-- `docs/`: Documentação detalhada do sistema.
-- `tests/`: Suíte de testes automatizados.
-- `data/`: Diretório para armazenamento de bases de dados (não versionadas).
+- **Modelo de IA:** Implementação de um classificador binário baseado em Transformers (BERTimbau).
+- **Dataset:** Utilização do *Fake.br-Corpus* (NILC-USP) com fine-tuning em dados de fontes oficiais (OMS, Ministério da Saúde).
+- **Interface:** Integração via API (ex: `python-telegram-bot`).
+- **Métricas de Sucesso:** Foco em Acurácia, F1-Score e, crucialmente, na redução de **Falsos Positivos**.
+
+##  Estrutura do Repositório
+
+- `src/`: Código-fonte (API, Chatbot, Modelos e Utils).
+- `docs/`: Documentação técnica e relatórios.
+- `tests/`: Testes automatizados.
+- `data/`: Armazenamento de datasets (não versionados).
 - `notebooks/`: Experimentos e análises de dados.
 
-## Tecnologias Utilizadas
+## 👥 Equipe
+- Bernardo Simões
+- Jose Fernando
+- Marcello Henrique
+- Glewbber Spindola
 
-- **Linguagem:** Python 3.11+
-- **IA/ML:** Scikit-learn, TensorFlow/PyTorch (a definir)
-- **API:** FastAPI / Flask
-- **Containerização:** Docker & Docker Compose
-- **CI/CD:** GitHub Actions
-
-## Como Contribuir
-
-Para contribuir com o projeto, por favor leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes sobre nosso código de conduta e o processo de envio de pull requests.
-
-## Licença
-
+## 📄 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
