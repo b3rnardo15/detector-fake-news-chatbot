@@ -26,11 +26,11 @@ A disseminação em massa de notícias falsas (*fake news*) relacionadas à saú
 - `data/`: Armazenamento de datasets (não versionados).
 - `notebooks/`: Experimentos e análises de dados.
 
-## 👥 Equipe
+##  Equipe
 - Bernardo Simões
 - Jose Fernando
 - Marcello Henrique
 - Glewbber Spindola
 
-## 📄 Licença
+##  Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
